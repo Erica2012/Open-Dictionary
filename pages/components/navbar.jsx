@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="shadow-md">
+    <div className="shadow-md sticky top-0 z-50">
       <div>
         <nav className="flex  justify-between py-4 max-w-7 mx-auto ">
           {/* //navbar items */}
