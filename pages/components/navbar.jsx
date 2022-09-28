@@ -36,8 +36,12 @@ const Navbar = () => {
             <Link href="/quizzes">
               <a> Quizzes</a>
             </Link>
-            <button className="shadow-md w-20 h-12">sign up</button>
-            <button className="shadow-md w-20 h-12 ">sign in</button>
+            <Link href="/signup">
+              <button className="shadow-md w-20 h-12">sign up</button>
+            </Link>
+            <Link href="/signin">
+              <button className="shadow-md w-20 h-12 ">sign in</button>
+            </Link>
           </div>
         </nav>
       </div>
