@@ -1,58 +1,54 @@
 import React from "react";
-import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
-const SignIn = () => {
+const Signin = () => {
   return (
-    // <div className="flex items-center justify-center h-[100vh] w-[100vw] font-light">
-    <div className="bg-gradient-to-br  from-black via-emerald-300 to-yellow-400 h-[calc(100vh_-_88px)] bg-scroll ">
-      {/* <Image src="/images/qwe.jpg"layout="fill" /> */}
-      <div className="bg-white/40 backdrop-blur-md h-[550px] w-[400px]  md:w-[650px] lg:w-[800px] rounded-xl shadow-xl flex flex-row">
-        <div className="text-white/80 md:basis-1/2">
-          <div className="text-3xl pt-20 pb-12 text-center sm:text-left mx-32 font-semibold">
-            Sign In
-          </div>
-          <table className="text-xl">
-            <tbody>
-            <tr>
-              <td className="px-6 py-3">Email :</td>
-              <td>
-                <input
-                  className="bg-transparent placeholder-white/50 w-[120px] font-thin hover:shadow-inner rounded-full px-2"
-                  placeholder="Email..."
-                />
-              </td>            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-              <td className="px-6 py-3">Password :</td>
-              <td>
-                <input
-                  className="bg-white text-gray-500 placeholder-blue-500  w-[120px] font-thin hover:shadow-inner rounded-full px-2 "
-                  placeholder="Password..."
-                />
-              </td>
-            </tr>
-            </tfoot>
-            
-          </table>
-          <button className="bg-white/5 backdrop-blur-sm w-[130px] h-[40px] rounded-full shadow-lg hover:bg-amber-300 my-20 mx-32 text-xl">
-            Sign In
-          </button>
+    <div className="relative w-full h-screen bg-zinc-800/90 ">
+      <Image
+        className="absolute w-full h-full object-cover mix-blend-overlay"
+        src="/images/newbg1.jpg"
+        layout="fill"
+      />
+      <div className="grid grid-col-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 bg-white sm:max-w-[900px] ">
+        <div className="hidden md:block bg-gray-400">
+          <Image src="/images/lognew.png" alt="" width={600} height={600} />
         </div>
-        <div className=" w-full h-full hidden md:flex">
-          <Image
-            src="/images/login1.png"
-            className="w-16 h-16"
-            width={1200}
-            height={120}
-            objectFit="contain"
-          />
+        <div className="p-4 flex flex-col justify-center ">
+          <form>
+            <h2 className="text-4xl font-bold text-center mb-8">Login</h2>
+            <div>
+              <input
+                className=" w-[120px] font-thin hover:shadow-inner rounded-full px-2"
+                type="text"
+                placeholder="firstname"
+              />
+            </div>
+            <div>
+              <input className=" p-2 " type="text" placeholder="lastname" />
+            </div>
+            <div>
+              <input className=" p-2 " type="email" placeholder="email" />
+            </div>
+            <div>
+              <input className=" p-2 " type="password" placeholder="password" />
+            </div>
+            <div>
+              <input
+                className=" p-2 "
+                type="password"
+                placeholder="confirm password"
+              />
+            </div>
+
+            <button className="w-full p y-2 my-4 rounded-full bg-violet-700 hover:bg-violet-600">
+              Login
+            </button>
+            <p className="text-center">Forgot Email or Password</p>
+          </form>
         </div>
       </div>
     </div>
   );
 };
 
-export default SignIn;
+export default Signin;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { Howl } from "howler";
 
-import Meaning from "./Meaning";
+import Meaning from "..components/Meaning";
 
 const MeaningList = () => {
   const [word, setWord] = useState([]);

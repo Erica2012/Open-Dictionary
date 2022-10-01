@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+// import Landingpage from './landingpage'
+import DashboardUser from './dashboarduser';
 
 export default function Home() {
   return (
@@ -10,8 +12,8 @@ export default function Home() {
         <meta name="meaning of words" content="Dictionary app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      
+      {/* <Landingpage /> */}
+      <DashboardUser />
     </div>
-  )
+  );
 }
